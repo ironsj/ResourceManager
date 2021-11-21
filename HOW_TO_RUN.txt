@@ -1,0 +1,34 @@
+NOTE: I created and tested this project in Java version 17.0.1
+
+Input files are to be in the following format:
+
+[number of processes]
+[number of resources] [number of instances for R0, R1, ..., Rn]
+[request/release] [process number] [resource number] [number of instances of resource]
+
+An example would be:
+
+3
+4   1 2 1 3
+request 1 0 1
+
+Input files are not to have any extra comments or number or the project will not run properly. This folder
+contains three separate files that can be used to test the project (the example files provided on the website)
+
+HOW TO RUN: 
+1. Go to the directory containing the jar file in command line
+
+2. Enter 'java -jar ResourceManager.jar [file name]'. For example:
+	java -jar ResourceManager.jar NoDeadlock.txt
+
+3. A window will appear with a button that says 'start'. Press start to begin the simulation.
+
+4. The window will now show a graphical representation of the simulation. To go to the next step within
+	the input file, press the button that says 'Next Step'. 
+
+5. Each time the button is pressed, the graphics in the window will update to show what has happened. Along
+	with this, there will be information within the command line terminal that gives a more in depth
+	explanation of what has happened and whether or not there is deadlock.
+
+6. When there are no more steps, pressing the 'Next Step' button will result in "End of file" being printed
+	in the terminal. To finish running, press the 'X' button in the window of the graphics.
